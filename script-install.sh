@@ -86,7 +86,6 @@ motif="echo '
 # CORP DU PROGRAMME - Le code suivant ne devrait pas etre modifiez
 # ================================
 
-apt-get update
 
 custom_prompt()
 { # personnalisation du prompteur 
@@ -136,6 +135,7 @@ export PS1=\"\
 
 upgrade_system()
 { # mise a jour du systeme
+	apt-get update
 	if [ "$1" = 'yes' ]; then
 		apt-get upgrade -y
 	fi
@@ -144,6 +144,7 @@ upgrade_system()
 installation_paquet_liste()
 { # installation des paquets 
 	if [ "$1" = 'yes' ]; then
+		apt-get update
 		paquet_liste=''
 		while read paquet_name paquet_install
 		do
