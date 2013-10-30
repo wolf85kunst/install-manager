@@ -30,6 +30,7 @@ custom_prompt='no' # personnaliser le prompt du shell, ajout des couleurs au bas
 add_logo='no' # ajouter un logo en ASCII ART a l'ouverture de session bash
 info_session='no' # ajouter des informations systeme a l'ouverture de session bash
 firewall_iptable='no' # configurer l'ordinateur de maniere securisee
+
 # Ajouter ici les depots PPA (commenter pour desactiver les depots prives)
 	#add-apt-repository ppa:freetuxtv/freetuxtv # freetuxtv
 
